@@ -1,8 +1,9 @@
 # CODEOWNERS — see https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 #
-# Last matching rule per file wins. Only the owners on the matching rule are
-# auto-requested for review; quickwit-core members retain repo write access
-# and can still approve any PR manually.
+# Last matching rule per file wins. Approval from any listed owner satisfies
+# the requirement. quickwit-dev is listed on every rule so it can always
+# approve; an additional team is listed on the metrics Parquet pipeline paths
+# so PRs scoped to those paths can be approved by either team.
 
 # Default: quickwit-core owns everything
 *                                                        @quickwit-oss/quickwit-core

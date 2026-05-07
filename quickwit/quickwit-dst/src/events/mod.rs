@@ -12,9 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//! Stateright models mirroring the TLA+ specifications.
+//! Production-side event streams for trace-conformance testing.
+//!
+//! The pattern mirrors [`crate::invariants::recorder`]: a global pluggable
+//! observer; production calls a `record_*_event` function on every state
+//! transition; tests install an observer that captures events into a
+//! collector for replay through the Stateright model.
 
 pub mod merge_pipeline;
-pub mod parquet_data_model;
-pub mod sort_schema;
-pub mod time_windowed_compaction;

@@ -8547,6 +8547,7 @@ dependencies = [
  "quickwit-config",
  "quickwit-directories",
  "quickwit-doc-mapper",
+ "quickwit-dst",
  "quickwit-indexing",
  "quickwit-ingest",
  "quickwit-metastore",
